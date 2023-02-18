@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/****** Start Nav ******/
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.customnav {
+  background: #915181 !important;
+  background: linear-gradient(
+    90deg,
+    #915181 7%,
+    #524163 74%,
+    #373b56 100%
+  ) !important;
+}
+.customnavbrand {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 30px;
+}
+.customnavbrand:hover {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .customnavlist {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.customnavlink {
+  color: #ffffff !important;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .customnavlink:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    background: #ffffff;
+    height: 3px;
+    border-radius: 5px;
+    opacity: 1;
+    visibility: visible;
+    width: 0;
+    -webkit-transition: 0.15s all ease-out;
+    -o-transition: 0.15s all ease-out;
+    transition: 0.15s all ease-out;
+  }
+}
+
+.customnavlink:hover:before {
+  width: calc(100% - 16px);
+}
+
+.activelink {
+  color: #ffffff;
+}
+.iconlist {
+  display: flex;
+}
+.iconcustom {
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+}
+.usericon {
+  color: #ffff;
+  font-size: 25px;
+  margin: 0 10px 0 0;
+}
+
+/****** End Nav ******/
+
+/****** Header Nav ******/
+header {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background: #915181 !important;
+  background: linear-gradient(
+    90deg,
+    #915181 7%,
+    #524163 74%,
+    #373b56 100%
+  ) !important;
+  height: 600px;
+  position: relative;
+}
+
+.greeting {
+  color: #fff;
+  text-align: center;
+  padding-top: 150px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+.img-header {
+  bottom: 5px;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  position: absolute;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-header {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 600px) {
+}
+
+/****** Header Nav ******/
+
+/****** Start Footer ******/
+
+footer {
+  margin-bottom: -20px;
+}
+footer P {
+  background-color: #524163;
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+}
+/****** End Footer ******/
