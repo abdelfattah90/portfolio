@@ -141,3 +141,51 @@ footer P {
   color: #ffffff;
 }
 /****** End Footer ******/
+
+.latest-works {
+  margin: 0 auto;
+  background: #915181 !important;
+  background: linear-gradient(
+    90deg,
+    #915181 7%,
+    #524163 74%,
+    #373b56 100%
+  ) !important;
+}
+.latest-works h2 {
+  color: #ffffff;
+}
+.works-card {
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.list-group-item {
+  background: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border: none;
+}
+
+.button-visit {
+  color: #fff;
+  background-color: #915181;
+  background: #915181 !important;
+  background: linear-gradient(
+    90deg,
+    #915181 7%,
+    #524163 74%,
+    #373b56 100%
+  ) !important;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+.button-visit:hover {
+  opacity: 0.8;
+}
+
+/**/
