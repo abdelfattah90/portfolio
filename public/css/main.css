@@ -1,10 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 * {
   font-family: 'Work Sans', sans-serif;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
 
-/****** Start Nav ********************************************/
-
+body {
+  background: #915181 !important;
+  background: linear-gradient(
+    90deg,
+    #915181 7%,
+    #524163 74%,
+    #373b56 100%
+  ) !important;
+}
+/* Start Nav */
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
@@ -18,7 +36,6 @@
   ) !important;
 }
 .customnavbrand {
-  color: #ffff;
   text-decoration: none;
   font-size: 30px;
 }
@@ -79,78 +96,75 @@
   font-size: 25px;
   margin: 0 10px 0 0;
 }
+/* End Nav */
 
-/****** End Nav ***********************************************************/
+/**************************** Home Page  ****************************/
 
-/****** Start Header *************************************************/
-header {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background: #915181 !important;
-  background: linear-gradient(
-    90deg,
-    #915181 7%,
-    #524163 74%,
-    #373b56 100%
-  ) !important;
-  height: 600px;
+/* Start Landing */
+.landing {
   position: relative;
 }
-
-.greeting {
-  color: #fff;
-  text-align: center;
-  padding-top: 150px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin: 0 auto;
-}
-
-.img-header {
-  bottom: 5px;
-  height: 350px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
+.landing::before {
+  content: '';
   position: absolute;
-  opacity: 0.5;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  height: 100%;
 }
-
-@media only screen and (max-width: 600px) {
-  .img-header {
-    height: 250px;
+.landing .container {
+  min-height: calc(120vh - 72px);
+  display: flex;
+  align-items: center;
+}
+.landing .info {
+  flex: 1;
+}
+@media (max-width: 991px) {
+  .landing .info {
+    text-align: center;
+  }
+  .landing .container {
+    min-height: calc(60vh - 72px);
+    padding-bottom: 10px;
+    margin-top: 100px;
   }
 }
-@media only screen and (min-width: 600px) {
+
+.job {
+  color: #c7c7c7;
 }
 
-/****** End Header Nav **********************************************************/
+.landing .image img {
+  position: relative;
+  width: 600px;
+  opacity: 0.5;
+}
+@media (max-width: 991px) {
+  .landing .image {
+    display: none;
+  }
+}
+/* End Landing */
 
-/****** Start Latest Works *****************************************************/
+/* Start Latest Works */
 .latest-works {
   margin: 0 auto;
-  padding-bottom: 100px;
-  background: #915181 !important;
-  background: linear-gradient(
-    90deg,
-    #915181 7%,
-    #524163 74%,
-    #373b56 100%
-  ) !important;
+  padding-bottom: 50px;
 }
-.latest-works h2 {
-  color: #ffffff;
+@media only screen and (min-width: 700px) {
+  .latest-works {
+    width: 80%;
+  }
 }
+
 .works-card {
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  box-shadow: 60px 40px 210px 70px rgba(255, 255, 255, 0.107);
   padding: 10px;
 }
 .list-group-item {
@@ -158,7 +172,9 @@ header {
   color: #ffffff;
   border: none;
 }
-
+.work-ar {
+  font-family: 'Cairo', sans-serif;
+}
 .button-visit {
   color: #fff;
   background-color: #915181;
@@ -171,29 +187,51 @@ header {
   ) !important;
   border-radius: 5px;
   border: 0;
+  padding: 10px 15px;
   cursor: pointer;
 }
 .button-visit:hover {
   opacity: 0.8;
   color: #ffffff;
 }
-
-.ecommerce-app {
-  padding: 30px 0;
+.line-break {
+  border-bottom: 1px solid #d4cfcf12;
+  border-radius: 5px;
+  width: 97%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
-/****** End Latest Works *****************************************************/
+/* End Latest Works */
 
-/****** End Home Page ********************************************************/
+/* Start Technologies */
+.tech {
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tech img {
+  margin: 10px 20px;
+}
+/* End Technologies */
 
-/****** Start Footer *********************************************************/
+/**************************** End Home Page ****************************/
+
+/* Start Footer */
 
 footer {
   margin-bottom: -20px;
 }
 footer P {
-  background-color: #524163;
+  background: #915181 !important;
+  background: linear-gradient(
+    90deg,
+    #7e5173 7%,
+    #524163 74%,
+    #373b56 100%
+  ) !important;
   text-align: center;
   padding: 15px;
-  color: #ffffff;
 }
-/****** End Footer ***********************************************************/
+/* End Footer */
