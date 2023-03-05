@@ -190,6 +190,12 @@ body {
   padding: 10px 15px;
   cursor: pointer;
 }
+@media (max-width: 991px) {
+  .button-visit {
+    padding: 5px 10px;
+  }
+}
+
 .button-visit:hover {
   opacity: 0.8;
   color: #ffffff;

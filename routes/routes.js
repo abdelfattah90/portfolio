@@ -2,9 +2,9 @@ import express from 'express'
 const router = express.Router()
 
 router.get('/', (req, res) => res.render('pages/index'))
-router.get('/projects', (req, res) => res.render('pages/projects'))
+router.get('/works', (req, res) => res.render('pages/works'))
+router.get('/about', (req, res) => res.render('pages/about'))
 router.get('/snippets', (req, res) => res.render('pages/snippets'))
-router.get('/blogs', (req, res) => res.render('pages/blogs'))
 router.get('/contact', (req, res) => res.render('pages/contact'))
 router.get('/*', (req, res) => res.render('pages/404'))
 
