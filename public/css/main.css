@@ -3,7 +3,7 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-/****** Start Nav ******/
+/****** Start Nav ********************************************/
 
 .navbar-toggler:focus {
   box-shadow: none !important;
@@ -80,9 +80,9 @@
   margin: 0 10px 0 0;
 }
 
-/****** End Nav ******/
+/****** End Nav ***********************************************************/
 
-/****** Header Nav ******/
+/****** Start Header *************************************************/
 header {
   background-position: center center;
   background-repeat: no-repeat;
@@ -127,23 +127,12 @@ header {
 @media only screen and (min-width: 600px) {
 }
 
-/****** Header Nav ******/
+/****** End Header Nav **********************************************************/
 
-/****** Start Footer ******/
-
-footer {
-  margin-bottom: -20px;
-}
-footer P {
-  background-color: #524163;
-  text-align: center;
-  padding: 15px;
-  color: #ffffff;
-}
-/****** End Footer ******/
-
+/****** Start Latest Works *****************************************************/
 .latest-works {
   margin: 0 auto;
+  padding-bottom: 100px;
   background: #915181 !important;
   background: linear-gradient(
     90deg,
@@ -186,6 +175,25 @@ footer P {
 }
 .button-visit:hover {
   opacity: 0.8;
+  color: #ffffff;
 }
 
-/**/
+.ecommerce-app {
+  padding: 30px 0;
+}
+/****** End Latest Works *****************************************************/
+
+/****** End Home Page ********************************************************/
+
+/****** Start Footer *********************************************************/
+
+footer {
+  margin-bottom: -20px;
+}
+footer P {
+  background-color: #524163;
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+}
+/****** End Footer ***********************************************************/

@@ -1,27 +1,40 @@
 <%- include('../partials/head') %> <%- include('../partials/navbar') %>
 
-<header>
-  <h4 class="greeting">Peace and Allah's mercy and blessings be upon you</h4>
-  <div class="img-header">
-    <img class="img-fluid" src="./images/header.png" />
-  </div>
-</header>
-<section class="latest-works">
-  <h2 class="text-center p-5">Latest Works</h2>
-  <div class="container">
-    <div class="works-card">
-      <ul class="list-group">
-        <li
-          class="list-group-item d-flex justify-content-between align-items-center"
-        >
-          <div class="align-self-center">Project name</div>
-          <div class="align-self-center">completed</div>
-          <div class="align-self-center">
-            <button class="button-visit align-self-center">Live</button>
+    <header>
+      <h4 class="greeting">Peace and Allah's mercy and blessings be upon you</h4>
+      <div class="img-header">
+        <img class="img-fluid" src="./images/header.png" />
+      </div>
+    </header>
+    <section class="latest-works">
+      <div class="container">
+        <h2 class="pt-5 pb-3">Latest Works</h2>
+        <div class="works-card">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="align-self-center">Project name</div>
+              <div class="align-self-center">completed</div>
+              <div class="align-self-center">
+                <button class="button-visit align-self-center">Live</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="ecommerce-app">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4"
+              src="./images/marketing.png" width="550" alt=""></div>
+          <div class="col-md-6 text-center text-md-start offset-md-1">
+            <h6 class="fw-bold fs-4 display-3 lh-sm">Ecommerce MERN Stack App</h6>
+            <p class="my-4 pe-xl-5"> The rise of mobile devices transforms the way we consume information entirely and
+              the world's most elevant channels such as Facebook.</p><a class="btn btn-lg button-visit rounded-pill "
+              href="/" role="button">Live</a>
           </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-<%- include('../partials/footer') %>
+        </div>
+      </div>
+    </section>
+    <%- include('../partials/footer') %>
