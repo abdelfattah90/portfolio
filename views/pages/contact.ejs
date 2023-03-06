@@ -1,3 +1,110 @@
 <%- include('../partials/head') %> <%- include('../partials/navbar') %>
-<p>Contact</p>
+
+<div class="spaceH"></div>
+
+<section class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-5 d-flex align-items-stretch">
+        <div class="info">
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Phone:</h4>
+            <a href="tel:+2001066078954"><p>+20 010 660 789 54</p></a>
+          </div>
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <a href="mailto:ahmedomar1007@gmail.com"
+              ><p>ahmedomar1007@gmail.com</p></a
+            >
+          </div>
+
+          <div class="address">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h4>Location:</h4>
+            <p>Damanhour, Egypt</p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1135.3769942052852!2d30.455308980572!3d31.034520006906906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1678097184374!5m2!1sen!2seg"
+            style="border: 0; width: 100%; height: 290px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form
+          action="https://formsubmit.co/ahmedomar1007@gmail.com"
+          method="POST"
+          role="form"
+          class="email-form"
+        >
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                id="name"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="name">Your Email</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              id="subject"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://ahmed-nuex.onrender.com/thanks"
+          />
+          <div class="text-center">
+            <button class="button-send" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 <%- include('../partials/footer') %>

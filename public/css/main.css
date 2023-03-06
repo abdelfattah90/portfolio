@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
 * {
   font-family: 'Work Sans', sans-serif;
 }
@@ -175,7 +176,7 @@ body {
 .work-ar {
   font-family: 'Cairo', sans-serif;
 }
-.button-visit {
+.button-live {
   color: #fff;
   background-color: #915181;
   background: #915181 !important;
@@ -191,12 +192,12 @@ body {
   cursor: pointer;
 }
 @media (max-width: 991px) {
-  .button-visit {
+  .button-live {
     padding: 5px 10px;
   }
 }
 
-.button-visit:hover {
+.button-live:hover {
   opacity: 0.8;
   color: #ffffff;
 }
@@ -223,6 +224,240 @@ body {
 /* End Technologies */
 
 /**************************** End Home Page ****************************/
+.spaceH {
+  height: 100px;
+}
+/*----------------------------- About ---------------------------------*/
+
+.profile-img {
+  border-radius: 10px;
+}
+.about {
+  background-color: white;
+  color: black;
+  padding: 40px 0 60px 0;
+}
+.section-title h2,
+.section-title p,
+.content h3,
+.content p {
+  color: black;
+}
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  text-shadow: 3px 3px 11px rgba(103, 103, 103, 0.532);
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #d449b2;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.info-links {
+  color: #757575;
+  text-decoration-color: #373b5656;
+}
+/*----------------------------- End About ---------------------------------*/
+
+/*----------------------------- Contact ---------------------------------*/
+
+.contact {
+  padding-bottom: 130px;
+}
+.contact h2,
+.contact p {
+  color: white;
+}
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #915181;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e5e5e579;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+.contact .info a {
+  text-decoration-color: #ababab;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #ad8da5;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #ad8da5;
+  color: #fff;
+}
+
+.contact .email-form {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .email-form .loading:before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+}
+
+.contact .email-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .email-form label {
+  padding-bottom: 8px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .email-form input {
+  height: 44px;
+}
+
+.contact .email-form textarea {
+  padding: 10px 15px;
+}
+
+.button-send {
+  color: #fff;
+  background-color: #915181;
+  background: #915181 !important;
+  background: linear-gradient(
+    90deg,
+    #915181 7%,
+    #524163 74%,
+    #373b56 100%
+  ) !important;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .button-visit {
+    padding: 5px 10px;
+  }
+}
+
+.button-send:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
 
 /* Start Footer */
 
