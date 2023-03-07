@@ -4,26 +4,37 @@
 * {
   font-family: 'Work Sans', sans-serif;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-body {
-  background: #915181 !important;
-  background: linear-gradient(
-    90deg,
-    #915181 7%,
-    #524163 74%,
-    #373b56 100%
-  ) !important;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #373b56;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a35c91;
+}
+
 /* Start Nav */
+.navbar-toggler {
+  background-color: white !important;
+  transition: 1s;
+}
+.navbar-toggler-close {
+  background-color: rgb(198, 198, 198) !important;
+  transition: 1s;
+}
+
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
@@ -104,6 +115,19 @@ body {
 /* Start Landing */
 .landing {
   position: relative;
+  background: #915181 !important;
+  background: linear-gradient(
+    90deg,
+    #915181 7%,
+    #524163 74%,
+    #373b56 100%
+  ) !important;
+}
+@media (min-width: 991px) {
+  .landing {
+    margin: 100px 60px 0 60px;
+    border-radius: 6vh;
+  }
 }
 .landing::before {
   content: '';
@@ -128,10 +152,12 @@ body {
   .landing .container {
     min-height: calc(60vh - 72px);
     padding-bottom: 10px;
-    margin-top: 100px;
   }
 }
 
+.name {
+  color: #ffffff;
+}
 .job {
   color: #c7c7c7;
 }
@@ -150,7 +176,7 @@ body {
 
 /* Start Latest Works */
 .latest-works {
-  margin: 0 auto;
+  margin: 100px auto;
   padding-bottom: 50px;
 }
 @media only screen and (min-width: 700px) {
@@ -161,11 +187,10 @@ body {
 
 .works-card {
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(30px);
+  background: #915181 !important;
+  -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(30px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 60px 40px 210px 70px rgba(255, 255, 255, 0.107);
+  box-shadow: 50px 30px 190px 60px rgba(88, 88, 88, 0.242);
   padding: 10px;
 }
 .list-group-item {
@@ -178,14 +203,7 @@ body {
 }
 .button-live {
   color: #fff;
-  background-color: #915181;
-  background: #915181 !important;
-  background: linear-gradient(
-    90deg,
-    #915181 7%,
-    #524163 74%,
-    #373b56 100%
-  ) !important;
+  background-color: #a26893;
   border-radius: 5px;
   border: 0;
   padding: 10px 15px;
@@ -199,7 +217,8 @@ body {
 
 .button-live:hover {
   opacity: 0.8;
-  color: #ffffff;
+  color: #c9c9c9;
+  transition: 0.5s;
 }
 .line-break {
   border-bottom: 1px solid #d4cfcf12;
@@ -220,6 +239,10 @@ body {
 }
 .tech img {
   margin: 10px 20px;
+}
+.tech img:hover {
+  transition: 1s;
+  opacity: 0.5;
 }
 /* End Technologies */
 
@@ -246,7 +269,7 @@ body {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  text-shadow: 3px 3px 11px rgba(103, 103, 103, 0.532);
+  text-shadow: 3px 3px 11px rgba(146, 146, 146, 0.418);
 }
 
 .about .content ul {
@@ -284,10 +307,6 @@ body {
 
 .contact {
   padding-bottom: 130px;
-}
-.contact h2,
-.contact p {
-  color: white;
 }
 .contact .info {
   padding: 30px;
@@ -375,30 +394,6 @@ body {
   padding-bottom: 8px;
 }
 
-.contact .email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
 .contact .email-form .loading:before {
   content: '';
   display: inline-block;
@@ -465,13 +460,7 @@ footer {
   margin-bottom: -20px;
 }
 footer P {
-  background: #915181 !important;
-  background: linear-gradient(
-    90deg,
-    #7e5173 7%,
-    #524163 74%,
-    #373b56 100%
-  ) !important;
+  background: #e9e9e96c !important;
   text-align: center;
   padding: 15px;
 }
