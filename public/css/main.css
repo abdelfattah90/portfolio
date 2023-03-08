@@ -7,7 +7,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 /* Track */
@@ -22,16 +22,16 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #a35c91;
+  background: #4b4f6e;
 }
 
 /* Start Nav */
 .navbar-toggler {
-  background-color: white !important;
+  background-color: rgb(106, 106, 106) !important;
   transition: 1s;
 }
 .navbar-toggler-close {
-  background-color: rgb(198, 198, 198) !important;
+  background-color: white !important;
   transition: 1s;
 }
 
@@ -301,12 +301,19 @@
   color: #757575;
   text-decoration-color: #373b5656;
 }
+.certificate-link {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 16px;
+  color: #4b8eb8;
+}
 /*----------------------------- End About ---------------------------------*/
 
 /*----------------------------- Contact ---------------------------------*/
 
 .contact {
   padding-bottom: 130px;
+  margin-top: 50px;
 }
 .contact .info {
   padding: 30px;
@@ -459,9 +466,11 @@
 footer {
   margin-bottom: -20px;
 }
-footer P {
+footer {
   background: #e9e9e96c !important;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
+  padding-top: 25px;
 }
+
 /* End Footer */
